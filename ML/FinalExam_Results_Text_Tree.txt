@@ -1,0 +1,544 @@
+|--- duration <= 523.50
+|   |--- poutcome_success <= 0.50
+|   |   |--- duration <= 208.50
+|   |   |   |--- month_mar <= 0.50
+|   |   |   |   |--- month_oct <= 0.50
+|   |   |   |   |   |--- month_apr <= 0.50
+|   |   |   |   |   |   |--- month_feb <= 0.50
+|   |   |   |   |   |   |   |--- month_sep <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [17009.00, 218.00] class: 0
+|   |   |   |   |   |   |   |--- month_sep >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [148.00, 23.00] class: 0
+|   |   |   |   |   |   |--- month_feb >  0.50
+|   |   |   |   |   |   |   |--- day <= 9.50
+|   |   |   |   |   |   |   |   |--- weights: [988.00, 29.00] class: 0
+|   |   |   |   |   |   |   |--- day >  9.50
+|   |   |   |   |   |   |   |   |--- weights: [83.00, 56.00] class: 0
+|   |   |   |   |   |--- month_apr >  0.50
+|   |   |   |   |   |   |--- housing_no <= 0.50
+|   |   |   |   |   |   |   |--- day <= 20.50
+|   |   |   |   |   |   |   |   |--- weights: [706.00, 10.00] class: 0
+|   |   |   |   |   |   |   |--- day >  20.50
+|   |   |   |   |   |   |   |   |--- weights: [38.00, 6.00] class: 0
+|   |   |   |   |   |   |--- housing_no >  0.50
+|   |   |   |   |   |   |   |--- duration <= 103.50
+|   |   |   |   |   |   |   |   |--- weights: [96.00, 6.00] class: 0
+|   |   |   |   |   |   |   |--- duration >  103.50
+|   |   |   |   |   |   |   |   |--- weights: [156.00, 72.00] class: 0
+|   |   |   |   |--- month_oct >  0.50
+|   |   |   |   |   |--- duration <= 95.50
+|   |   |   |   |   |   |--- marital_divorced <= 0.50
+|   |   |   |   |   |   |   |--- weights: [76.00, 0.00] class: 0
+|   |   |   |   |   |   |--- marital_divorced >  0.50
+|   |   |   |   |   |   |   |--- education_tertiary <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [9.00, 0.00] class: 0
+|   |   |   |   |   |   |   |--- education_tertiary >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 2.00] class: 1
+|   |   |   |   |   |--- duration >  95.50
+|   |   |   |   |   |   |--- day <= 20.50
+|   |   |   |   |   |   |   |--- education_secondary <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [50.00, 5.00] class: 0
+|   |   |   |   |   |   |   |--- education_secondary >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [32.00, 13.00] class: 0
+|   |   |   |   |   |   |--- day >  20.50
+|   |   |   |   |   |   |   |--- campaign <= 1.50
+|   |   |   |   |   |   |   |   |--- weights: [18.00, 33.00] class: 1
+|   |   |   |   |   |   |   |--- campaign >  1.50
+|   |   |   |   |   |   |   |   |--- weights: [14.00, 8.00] class: 0
+|   |   |   |--- month_mar >  0.50
+|   |   |   |   |--- duration <= 94.50
+|   |   |   |   |   |--- day <= 10.50
+|   |   |   |   |   |   |--- duration <= 79.00
+|   |   |   |   |   |   |   |--- balance <= 556.00
+|   |   |   |   |   |   |   |   |--- weights: [4.00, 1.00] class: 0
+|   |   |   |   |   |   |   |--- balance >  556.00
+|   |   |   |   |   |   |   |   |--- weights: [14.00, 0.00] class: 0
+|   |   |   |   |   |   |--- duration >  79.00
+|   |   |   |   |   |   |   |--- duration <= 83.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 3.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  83.50
+|   |   |   |   |   |   |   |   |--- weights: [7.00, 1.00] class: 0
+|   |   |   |   |   |--- day >  10.50
+|   |   |   |   |   |   |--- weights: [27.00, 0.00] class: 0
+|   |   |   |   |--- duration >  94.50
+|   |   |   |   |   |--- day <= 24.50
+|   |   |   |   |   |   |--- duration <= 173.50
+|   |   |   |   |   |   |   |--- age <= 33.50
+|   |   |   |   |   |   |   |   |--- weights: [26.00, 7.00] class: 0
+|   |   |   |   |   |   |   |--- age >  33.50
+|   |   |   |   |   |   |   |   |--- weights: [23.00, 28.00] class: 1
+|   |   |   |   |   |   |--- duration >  173.50
+|   |   |   |   |   |   |   |--- pdays <= 125.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 19.00] class: 1
+|   |   |   |   |   |   |   |--- pdays >  125.50
+|   |   |   |   |   |   |   |   |--- weights: [4.00, 2.00] class: 0
+|   |   |   |   |   |--- day >  24.50
+|   |   |   |   |   |   |--- age <= 43.00
+|   |   |   |   |   |   |   |--- age <= 36.50
+|   |   |   |   |   |   |   |   |--- weights: [13.00, 3.00] class: 0
+|   |   |   |   |   |   |   |--- age >  36.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 4.00] class: 1
+|   |   |   |   |   |   |--- age >  43.00
+|   |   |   |   |   |   |   |--- weights: [10.00, 0.00] class: 0
+|   |   |--- duration >  208.50
+|   |   |   |--- housing_no <= 0.50
+|   |   |   |   |--- pdays <= 381.50
+|   |   |   |   |   |--- month_mar <= 0.50
+|   |   |   |   |   |   |--- duration <= 393.50
+|   |   |   |   |   |   |   |--- month_oct <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [4774.00, 159.00] class: 0
+|   |   |   |   |   |   |   |--- month_oct >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [10.00, 9.00] class: 0
+|   |   |   |   |   |   |--- duration >  393.50
+|   |   |   |   |   |   |   |--- month_dec <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [1184.00, 141.00] class: 0
+|   |   |   |   |   |   |   |--- month_dec >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 3.00] class: 1
+|   |   |   |   |   |--- month_mar >  0.50
+|   |   |   |   |   |   |--- day <= 28.00
+|   |   |   |   |   |   |   |--- loan_no <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 1.00] class: 0
+|   |   |   |   |   |   |   |--- loan_no >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 19.00] class: 1
+|   |   |   |   |   |   |--- day >  28.00
+|   |   |   |   |   |   |   |--- age <= 37.50
+|   |   |   |   |   |   |   |   |--- weights: [6.00, 0.00] class: 0
+|   |   |   |   |   |   |   |--- age >  37.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 2.00] class: 1
+|   |   |   |   |--- pdays >  381.50
+|   |   |   |   |   |--- campaign <= 3.50
+|   |   |   |   |   |   |--- duration <= 252.50
+|   |   |   |   |   |   |   |--- pdays <= 428.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |   |   |--- pdays >  428.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |   |   |   |--- duration >  252.50
+|   |   |   |   |   |   |   |--- age <= 28.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |   |   |   |--- age >  28.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 24.00] class: 1
+|   |   |   |   |   |--- campaign >  3.50
+|   |   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |--- housing_no >  0.50
+|   |   |   |   |--- age <= 60.50
+|   |   |   |   |   |--- month_apr <= 0.50
+|   |   |   |   |   |   |--- pdays <= 23.50
+|   |   |   |   |   |   |   |--- month_mar <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [3228.00, 438.00] class: 0
+|   |   |   |   |   |   |   |--- month_mar >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [14.00, 44.00] class: 1
+|   |   |   |   |   |   |--- pdays >  23.50
+|   |   |   |   |   |   |   |--- pdays <= 386.50
+|   |   |   |   |   |   |   |   |--- weights: [293.00, 148.00] class: 0
+|   |   |   |   |   |   |   |--- pdays >  386.50
+|   |   |   |   |   |   |   |   |--- weights: [13.00, 38.00] class: 1
+|   |   |   |   |   |--- month_apr >  0.50
+|   |   |   |   |   |   |--- day <= 21.50
+|   |   |   |   |   |   |   |--- pdays <= 65.50
+|   |   |   |   |   |   |   |   |--- weights: [38.00, 37.00] class: 0
+|   |   |   |   |   |   |   |--- pdays >  65.50
+|   |   |   |   |   |   |   |   |--- weights: [26.00, 3.00] class: 0
+|   |   |   |   |   |   |--- day >  21.50
+|   |   |   |   |   |   |   |--- education_tertiary <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [24.00, 33.00] class: 1
+|   |   |   |   |   |   |   |--- education_tertiary >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [10.00, 36.00] class: 1
+|   |   |   |   |--- age >  60.50
+|   |   |   |   |   |--- balance <= 26.50
+|   |   |   |   |   |   |--- job_management <= 0.50
+|   |   |   |   |   |   |   |--- month_mar <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [18.00, 2.00] class: 0
+|   |   |   |   |   |   |   |--- month_mar >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |   |--- job_management >  0.50
+|   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |--- balance >  26.50
+|   |   |   |   |   |   |--- pdays <= 180.50
+|   |   |   |   |   |   |   |--- marital_single <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [102.00, 132.00] class: 1
+|   |   |   |   |   |   |   |--- marital_single >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [7.00, 1.00] class: 0
+|   |   |   |   |   |   |--- pdays >  180.50
+|   |   |   |   |   |   |   |--- pdays <= 191.00
+|   |   |   |   |   |   |   |   |--- weights: [17.00, 2.00] class: 0
+|   |   |   |   |   |   |   |--- pdays >  191.00
+|   |   |   |   |   |   |   |   |--- weights: [10.00, 9.00] class: 0
+|   |--- poutcome_success >  0.50
+|   |   |--- duration <= 132.50
+|   |   |   |--- month_may <= 0.50
+|   |   |   |   |--- pdays <= 103.50
+|   |   |   |   |   |--- pdays <= 84.50
+|   |   |   |   |   |   |--- pdays <= 7.50
+|   |   |   |   |   |   |   |--- balance <= 135.00
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 2.00] class: 1
+|   |   |   |   |   |   |   |--- balance >  135.00
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |   |   |--- pdays >  7.50
+|   |   |   |   |   |   |   |--- month_sep <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [19.00, 0.00] class: 0
+|   |   |   |   |   |   |   |--- month_sep >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |--- pdays >  84.50
+|   |   |   |   |   |   |--- duration <= 84.00
+|   |   |   |   |   |   |   |--- pdays <= 85.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |   |   |--- pdays >  85.50
+|   |   |   |   |   |   |   |   |--- weights: [9.00, 0.00] class: 0
+|   |   |   |   |   |   |--- duration >  84.00
+|   |   |   |   |   |   |   |--- day <= 3.50
+|   |   |   |   |   |   |   |   |--- weights: [6.00, 1.00] class: 0
+|   |   |   |   |   |   |   |--- day >  3.50
+|   |   |   |   |   |   |   |   |--- weights: [12.00, 19.00] class: 1
+|   |   |   |   |--- pdays >  103.50
+|   |   |   |   |   |--- age <= 23.50
+|   |   |   |   |   |   |--- weights: [0.00, 2.00] class: 1
+|   |   |   |   |   |--- age >  23.50
+|   |   |   |   |   |   |--- month_mar <= 0.50
+|   |   |   |   |   |   |   |--- balance <= 10431.00
+|   |   |   |   |   |   |   |   |--- weights: [73.00, 10.00] class: 0
+|   |   |   |   |   |   |   |--- balance >  10431.00
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |   |--- month_mar >  0.50
+|   |   |   |   |   |   |   |--- previous <= 7.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 2.00] class: 1
+|   |   |   |   |   |   |   |--- previous >  7.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |--- month_may >  0.50
+|   |   |   |   |--- day <= 26.50
+|   |   |   |   |   |--- weights: [29.00, 0.00] class: 0
+|   |   |   |   |--- day >  26.50
+|   |   |   |   |   |--- education_tertiary <= 0.50
+|   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |   |--- education_tertiary >  0.50
+|   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |--- duration >  132.50
+|   |   |   |--- month_may <= 0.50
+|   |   |   |   |--- duration <= 218.50
+|   |   |   |   |   |--- balance <= 2613.00
+|   |   |   |   |   |   |--- duration <= 161.50
+|   |   |   |   |   |   |   |--- duration <= 158.50
+|   |   |   |   |   |   |   |   |--- weights: [22.00, 34.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  158.50
+|   |   |   |   |   |   |   |   |--- weights: [6.00, 0.00] class: 0
+|   |   |   |   |   |   |--- duration >  161.50
+|   |   |   |   |   |   |   |--- previous <= 4.50
+|   |   |   |   |   |   |   |   |--- weights: [31.00, 80.00] class: 1
+|   |   |   |   |   |   |   |--- previous >  4.50
+|   |   |   |   |   |   |   |   |--- weights: [3.00, 31.00] class: 1
+|   |   |   |   |   |--- balance >  2613.00
+|   |   |   |   |   |   |--- month_sep <= 0.50
+|   |   |   |   |   |   |   |--- job_admin. <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [28.00, 16.00] class: 0
+|   |   |   |   |   |   |   |--- job_admin. >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 5.00] class: 1
+|   |   |   |   |   |   |--- month_sep >  0.50
+|   |   |   |   |   |   |   |--- weights: [0.00, 7.00] class: 1
+|   |   |   |   |--- duration >  218.50
+|   |   |   |   |   |--- pdays <= 79.50
+|   |   |   |   |   |   |--- campaign <= 2.50
+|   |   |   |   |   |   |   |--- pdays <= 76.00
+|   |   |   |   |   |   |   |   |--- weights: [3.00, 10.00] class: 1
+|   |   |   |   |   |   |   |--- pdays >  76.00
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |   |   |   |--- campaign >  2.50
+|   |   |   |   |   |   |   |--- weights: [3.00, 0.00] class: 0
+|   |   |   |   |   |--- pdays >  79.50
+|   |   |   |   |   |   |--- pdays <= 96.50
+|   |   |   |   |   |   |   |--- marital_married <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [11.00, 51.00] class: 1
+|   |   |   |   |   |   |   |--- marital_married >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [5.00, 72.00] class: 1
+|   |   |   |   |   |   |--- pdays >  96.50
+|   |   |   |   |   |   |   |--- pdays <= 175.50
+|   |   |   |   |   |   |   |   |--- weights: [26.00, 41.00] class: 1
+|   |   |   |   |   |   |   |--- pdays >  175.50
+|   |   |   |   |   |   |   |   |--- weights: [45.00, 190.00] class: 1
+|   |   |   |--- month_may >  0.50
+|   |   |   |   |--- housing_yes <= 0.50
+|   |   |   |   |   |--- duration <= 282.00
+|   |   |   |   |   |   |--- contact_cellular <= 0.50
+|   |   |   |   |   |   |   |--- weights: [3.00, 0.00] class: 0
+|   |   |   |   |   |   |--- contact_cellular >  0.50
+|   |   |   |   |   |   |   |--- day <= 24.00
+|   |   |   |   |   |   |   |   |--- weights: [5.00, 18.00] class: 1
+|   |   |   |   |   |   |   |--- day >  24.00
+|   |   |   |   |   |   |   |   |--- weights: [7.00, 5.00] class: 0
+|   |   |   |   |   |--- duration >  282.00
+|   |   |   |   |   |   |--- pdays <= 28.00
+|   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |   |   |--- pdays >  28.00
+|   |   |   |   |   |   |   |--- duration <= 507.00
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 22.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  507.00
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 1.00] class: 0
+|   |   |   |   |--- housing_yes >  0.50
+|   |   |   |   |   |--- duration <= 461.50
+|   |   |   |   |   |   |--- age <= 37.50
+|   |   |   |   |   |   |   |--- job_student <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [29.00, 4.00] class: 0
+|   |   |   |   |   |   |   |--- job_student >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |   |--- age >  37.50
+|   |   |   |   |   |   |   |--- pdays <= 352.00
+|   |   |   |   |   |   |   |   |--- weights: [7.00, 12.00] class: 1
+|   |   |   |   |   |   |   |--- pdays >  352.00
+|   |   |   |   |   |   |   |   |--- weights: [5.00, 0.00] class: 0
+|   |   |   |   |   |--- duration >  461.50
+|   |   |   |   |   |   |--- weights: [0.00, 4.00] class: 1
+|--- duration >  523.50
+|   |--- duration <= 827.50
+|   |   |--- poutcome_success <= 0.50
+|   |   |   |--- contact_unknown <= 0.50
+|   |   |   |   |--- duration <= 647.50
+|   |   |   |   |   |--- month_mar <= 0.50
+|   |   |   |   |   |   |--- pdays <= 370.50
+|   |   |   |   |   |   |   |--- age <= 59.50
+|   |   |   |   |   |   |   |   |--- weights: [628.00, 269.00] class: 0
+|   |   |   |   |   |   |   |--- age >  59.50
+|   |   |   |   |   |   |   |   |--- weights: [18.00, 22.00] class: 1
+|   |   |   |   |   |   |--- pdays >  370.50
+|   |   |   |   |   |   |   |--- duration <= 596.00
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 8.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  596.00
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |   |   |--- month_mar >  0.50
+|   |   |   |   |   |   |--- balance <= 10039.00
+|   |   |   |   |   |   |   |--- duration <= 616.00
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 9.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  616.00
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 1.00] class: 0
+|   |   |   |   |   |   |--- balance >  10039.00
+|   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |--- duration >  647.50
+|   |   |   |   |   |--- housing_no <= 0.50
+|   |   |   |   |   |   |--- day <= 15.50
+|   |   |   |   |   |   |   |--- balance <= 3227.00
+|   |   |   |   |   |   |   |   |--- weights: [87.00, 82.00] class: 0
+|   |   |   |   |   |   |   |--- balance >  3227.00
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 16.00] class: 1
+|   |   |   |   |   |   |--- day >  15.50
+|   |   |   |   |   |   |   |--- default_no <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 6.00] class: 1
+|   |   |   |   |   |   |   |--- default_no >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [141.00, 60.00] class: 0
+|   |   |   |   |   |--- housing_no >  0.50
+|   |   |   |   |   |   |--- day <= 29.50
+|   |   |   |   |   |   |   |--- previous <= 7.50
+|   |   |   |   |   |   |   |   |--- weights: [169.00, 167.00] class: 0
+|   |   |   |   |   |   |   |--- previous >  7.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 4.00] class: 1
+|   |   |   |   |   |   |--- day >  29.50
+|   |   |   |   |   |   |   |--- duration <= 674.50
+|   |   |   |   |   |   |   |   |--- weights: [4.00, 2.00] class: 0
+|   |   |   |   |   |   |   |--- duration >  674.50
+|   |   |   |   |   |   |   |   |--- weights: [4.00, 20.00] class: 1
+|   |   |   |--- contact_unknown >  0.50
+|   |   |   |   |--- duration <= 668.50
+|   |   |   |   |   |--- month_may <= 0.50
+|   |   |   |   |   |   |--- age <= 45.50
+|   |   |   |   |   |   |   |--- age <= 38.50
+|   |   |   |   |   |   |   |   |--- weights: [59.00, 18.00] class: 0
+|   |   |   |   |   |   |   |--- age >  38.50
+|   |   |   |   |   |   |   |   |--- weights: [15.00, 15.00] class: 0
+|   |   |   |   |   |   |--- age >  45.50
+|   |   |   |   |   |   |   |--- job_self-employed <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [49.00, 5.00] class: 0
+|   |   |   |   |   |   |   |--- job_self-employed >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |--- month_may >  0.50
+|   |   |   |   |   |   |--- campaign <= 27.00
+|   |   |   |   |   |   |   |--- marital_divorced <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [196.00, 21.00] class: 0
+|   |   |   |   |   |   |   |--- marital_divorced >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [24.00, 8.00] class: 0
+|   |   |   |   |   |   |--- campaign >  27.00
+|   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |--- duration >  668.50
+|   |   |   |   |   |--- marital_married <= 0.50
+|   |   |   |   |   |   |--- duration <= 731.00
+|   |   |   |   |   |   |   |--- age <= 32.50
+|   |   |   |   |   |   |   |   |--- weights: [12.00, 10.00] class: 0
+|   |   |   |   |   |   |   |--- age >  32.50
+|   |   |   |   |   |   |   |   |--- weights: [21.00, 3.00] class: 0
+|   |   |   |   |   |   |--- duration >  731.00
+|   |   |   |   |   |   |   |--- day <= 24.50
+|   |   |   |   |   |   |   |   |--- weights: [30.00, 24.00] class: 0
+|   |   |   |   |   |   |   |--- day >  24.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 10.00] class: 1
+|   |   |   |   |   |--- marital_married >  0.50
+|   |   |   |   |   |   |--- duration <= 710.00
+|   |   |   |   |   |   |   |--- month_may <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [9.00, 11.00] class: 1
+|   |   |   |   |   |   |   |--- month_may >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [22.00, 9.00] class: 0
+|   |   |   |   |   |   |--- duration >  710.00
+|   |   |   |   |   |   |   |--- job_technician <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [83.00, 14.00] class: 0
+|   |   |   |   |   |   |   |--- job_technician >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [7.00, 5.00] class: 0
+|   |   |--- poutcome_success >  0.50
+|   |   |   |--- housing_no <= 0.50
+|   |   |   |   |--- duration <= 766.50
+|   |   |   |   |   |--- education_primary <= 0.50
+|   |   |   |   |   |   |--- month_jul <= 0.50
+|   |   |   |   |   |   |   |--- job_technician <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [4.00, 26.00] class: 1
+|   |   |   |   |   |   |   |--- job_technician >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [3.00, 3.00] class: 0
+|   |   |   |   |   |   |--- month_jul >  0.50
+|   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |   |--- education_primary >  0.50
+|   |   |   |   |   |   |--- day <= 16.50
+|   |   |   |   |   |   |   |--- age <= 34.00
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |   |   |--- age >  34.00
+|   |   |   |   |   |   |   |   |--- weights: [5.00, 0.00] class: 0
+|   |   |   |   |   |   |--- day >  16.50
+|   |   |   |   |   |   |   |--- weights: [0.00, 2.00] class: 1
+|   |   |   |   |--- duration >  766.50
+|   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |--- housing_no >  0.50
+|   |   |   |   |--- day <= 30.50
+|   |   |   |   |   |--- previous <= 9.00
+|   |   |   |   |   |   |--- education_unknown <= 0.50
+|   |   |   |   |   |   |   |--- duration <= 810.00
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 49.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  810.00
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 2.00] class: 1
+|   |   |   |   |   |   |--- education_unknown >  0.50
+|   |   |   |   |   |   |   |--- contact_telephone <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |   |   |   |--- contact_telephone >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |--- previous >  9.00
+|   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |--- day >  30.50
+|   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |--- duration >  827.50
+|   |   |--- contact_cellular <= 0.50
+|   |   |   |--- month_may <= 0.50
+|   |   |   |   |--- job_technician <= 0.50
+|   |   |   |   |   |--- balance <= 11537.50
+|   |   |   |   |   |   |--- balance <= -33.00
+|   |   |   |   |   |   |   |--- month_jul <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 12.00] class: 1
+|   |   |   |   |   |   |   |--- month_jul >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 1.00] class: 0
+|   |   |   |   |   |   |--- balance >  -33.00
+|   |   |   |   |   |   |   |--- balance <= 298.50
+|   |   |   |   |   |   |   |   |--- weights: [32.00, 26.00] class: 0
+|   |   |   |   |   |   |   |--- balance >  298.50
+|   |   |   |   |   |   |   |   |--- weights: [40.00, 91.00] class: 1
+|   |   |   |   |   |--- balance >  11537.50
+|   |   |   |   |   |   |--- weights: [5.00, 0.00] class: 0
+|   |   |   |   |--- job_technician >  0.50
+|   |   |   |   |   |--- age <= 36.00
+|   |   |   |   |   |   |--- campaign <= 2.50
+|   |   |   |   |   |   |   |--- weights: [8.00, 0.00] class: 0
+|   |   |   |   |   |   |--- campaign >  2.50
+|   |   |   |   |   |   |   |--- default_no <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |   |   |   |--- default_no >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |--- age >  36.00
+|   |   |   |   |   |   |--- balance <= 3897.50
+|   |   |   |   |   |   |   |--- campaign <= 1.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |   |   |   |   |--- campaign >  1.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 7.00] class: 1
+|   |   |   |   |   |   |--- balance >  3897.50
+|   |   |   |   |   |   |   |--- weights: [3.00, 0.00] class: 0
+|   |   |   |--- month_may >  0.50
+|   |   |   |   |--- age <= 58.50
+|   |   |   |   |   |--- duration <= 1215.00
+|   |   |   |   |   |   |--- day <= 29.50
+|   |   |   |   |   |   |   |--- campaign <= 4.50
+|   |   |   |   |   |   |   |   |--- weights: [97.00, 54.00] class: 0
+|   |   |   |   |   |   |   |--- campaign >  4.50
+|   |   |   |   |   |   |   |   |--- weights: [10.00, 0.00] class: 0
+|   |   |   |   |   |   |--- day >  29.50
+|   |   |   |   |   |   |   |--- education_unknown <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 9.00] class: 1
+|   |   |   |   |   |   |   |--- education_unknown >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |   |   |--- duration >  1215.00
+|   |   |   |   |   |   |--- marital_married <= 0.50
+|   |   |   |   |   |   |   |--- housing_no <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [4.00, 22.00] class: 1
+|   |   |   |   |   |   |   |--- housing_no >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |   |   |   |--- marital_married >  0.50
+|   |   |   |   |   |   |   |--- duration <= 1777.50
+|   |   |   |   |   |   |   |   |--- weights: [19.00, 20.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  1777.50
+|   |   |   |   |   |   |   |   |--- weights: [6.00, 0.00] class: 0
+|   |   |   |   |--- age >  58.50
+|   |   |   |   |   |--- poutcome_failure <= 0.50
+|   |   |   |   |   |   |--- weights: [0.00, 9.00] class: 1
+|   |   |   |   |   |--- poutcome_failure >  0.50
+|   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |--- contact_cellular >  0.50
+|   |   |   |--- age <= 54.50
+|   |   |   |   |--- day <= 15.50
+|   |   |   |   |   |--- day <= 8.50
+|   |   |   |   |   |   |--- month_apr <= 0.50
+|   |   |   |   |   |   |   |--- duration <= 2006.50
+|   |   |   |   |   |   |   |   |--- weights: [58.00, 113.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  2006.50
+|   |   |   |   |   |   |   |   |--- weights: [4.00, 1.00] class: 0
+|   |   |   |   |   |   |--- month_apr >  0.50
+|   |   |   |   |   |   |   |--- duration <= 1121.00
+|   |   |   |   |   |   |   |   |--- weights: [13.00, 2.00] class: 0
+|   |   |   |   |   |   |   |--- duration >  1121.00
+|   |   |   |   |   |   |   |   |--- weights: [3.00, 7.00] class: 1
+|   |   |   |   |   |--- day >  8.50
+|   |   |   |   |   |   |--- campaign <= 8.50
+|   |   |   |   |   |   |   |--- job_services <= 0.50
+|   |   |   |   |   |   |   |   |--- weights: [49.00, 137.00] class: 1
+|   |   |   |   |   |   |   |--- job_services >  0.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 23.00] class: 1
+|   |   |   |   |   |   |--- campaign >  8.50
+|   |   |   |   |   |   |   |--- weights: [2.00, 0.00] class: 0
+|   |   |   |   |--- day >  15.50
+|   |   |   |   |   |--- poutcome_success <= 0.50
+|   |   |   |   |   |   |--- duration <= 1206.50
+|   |   |   |   |   |   |   |--- campaign <= 5.50
+|   |   |   |   |   |   |   |   |--- weights: [112.00, 145.00] class: 1
+|   |   |   |   |   |   |   |--- campaign >  5.50
+|   |   |   |   |   |   |   |   |--- weights: [15.00, 5.00] class: 0
+|   |   |   |   |   |   |--- duration >  1206.50
+|   |   |   |   |   |   |   |--- previous <= 4.50
+|   |   |   |   |   |   |   |   |--- weights: [34.00, 84.00] class: 1
+|   |   |   |   |   |   |   |--- previous >  4.50
+|   |   |   |   |   |   |   |   |--- weights: [4.00, 0.00] class: 0
+|   |   |   |   |   |--- poutcome_success >  0.50
+|   |   |   |   |   |   |--- weights: [0.00, 12.00] class: 1
+|   |   |   |--- age >  54.50
+|   |   |   |   |--- month_nov <= 0.50
+|   |   |   |   |   |--- job_housemaid <= 0.50
+|   |   |   |   |   |   |--- loan_no <= 0.50
+|   |   |   |   |   |   |   |--- weights: [0.00, 6.00] class: 1
+|   |   |   |   |   |   |--- loan_no >  0.50
+|   |   |   |   |   |   |   |--- duration <= 1543.50
+|   |   |   |   |   |   |   |   |--- weights: [37.00, 52.00] class: 1
+|   |   |   |   |   |   |   |--- duration >  1543.50
+|   |   |   |   |   |   |   |   |--- weights: [9.00, 3.00] class: 0
+|   |   |   |   |   |--- job_housemaid >  0.50
+|   |   |   |   |   |   |--- pdays <= 90.00
+|   |   |   |   |   |   |   |--- day <= 5.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |   |   |   |--- day >  5.50
+|   |   |   |   |   |   |   |   |--- weights: [9.00, 1.00] class: 0
+|   |   |   |   |   |   |--- pdays >  90.00
+|   |   |   |   |   |   |   |--- weights: [0.00, 1.00] class: 1
+|   |   |   |   |--- month_nov >  0.50
+|   |   |   |   |   |--- age <= 66.50
+|   |   |   |   |   |   |--- duration <= 867.50
+|   |   |   |   |   |   |   |--- day <= 19.50
+|   |   |   |   |   |   |   |   |--- weights: [1.00, 0.00] class: 0
+|   |   |   |   |   |   |   |--- day >  19.50
+|   |   |   |   |   |   |   |   |--- weights: [0.00, 2.00] class: 1
+|   |   |   |   |   |   |--- duration >  867.50
+|   |   |   |   |   |   |   |--- weights: [12.00, 0.00] class: 0
+|   |   |   |   |   |--- age >  66.50
+|   |   |   |   |   |   |--- weights: [0.00, 2.00] class: 1
